@@ -46,7 +46,7 @@ if vectorizer is None or not hasattr(vectorizer, "idf_"):
     st.stop()  # Stop the application to prevent 'idf not fitted' error
 
 
-st.title("🌿 EcoTourism Recommender — CBF + UFW")
+st.title("🌿 Tourism Recommender — CBF + UFW")
 st.caption("Basic CBF + User Feedback Weighting | TF‑IDF + NearestNeighbors (cosine) | Like/Skip/Bookmark (session)")
 
 # ---------------- Sidebar (modular UI) ----------------
