@@ -11,14 +11,14 @@ try:
 except ImportError:
     warnings.filterwarnings("ignore", message="Trying to unpickle estimator")
 
-from eco_recsys.data import load_artifacts, ensure_min_columns
-from eco_recsys.state import init_session, like_item, skip_item, toggle_bookmark, clear_feedback
-from eco_recsys.ui import (
+from tourism_recsys.data import load_artifacts, ensure_min_columns
+from tourism_recsys.state import init_session, like_item, skip_item, toggle_bookmark, clear_feedback
+from tourism_recsys.ui import (
     sidebar_filters, sidebar_feed_knobs, sidebar_feedback_knobs, status_chips,
     render_cards, search_controls
 )
-from eco_recsys.cbf import build_feed_cbf, search_cbf
-from eco_recsys.ufw import apply_ufw
+from tourism_recsys.cbf import build_feed_cbf, search_cbf
+from tourism_recsys.ufw import apply_ufw
 
 st.set_page_config(page_title="EcoTourism CBF + UFW", page_icon="🌿", layout="wide")
 
@@ -156,4 +156,4 @@ with tab_book:
         render_cards(items, [(gid, 0.0) for gid in bms], show_score=False, title_suffix="Bookmarks")
 
 st.write("---")
-st.caption("Note: eco_recsys.cbf (CBF), eco_recsys.ufw (User Feedback Weighting), eco_recsys.ui (UI), eco_recsys.data (loader)")
+st.caption("Note: tourism_recsys.cbf (CBF), tourism_recsys.ufw (User Feedback Weighting), tourism_recsys.ui (UI), tourism_recsys.data (loader)")
