@@ -1,6 +1,6 @@
-# Indonesia Ecotourism Recommender System
+# Indonesia Tourism Recommender System
 
-A content-based filtering (CBF) recommendation system for Indonesian ecotourism destinations, built as a Final Year Project (FYP). Powered by TF-IDF + Cosine Similarity with User Feedback Weighting (UFW) and served via a Streamlit interface.
+A content-based filtering (CBF) recommendation system for Indonesian tourism destinations, built as a Final Year Project (FYP). Powered by TF-IDF + Cosine Similarity with User Feedback Weighting (UFW) and served via a Streamlit interface.
 
 ## Features
 
@@ -15,7 +15,7 @@ A content-based filtering (CBF) recommendation system for Indonesian ecotourism 
 ## Architecture
 
 ```
-eco_recsys/
+tourism_recsys/
 ├── cbf.py       # Core CBF logic: TF-IDF, MMR, feed & search functions
 ├── ufw.py       # User Feedback Weighting: Like/Skip re-ranking
 ├── data.py      # Artifact loading (items.csv, TF-IDF matrix, KNN index)
@@ -32,7 +32,7 @@ artifacts/
 └── metadata.json            # Artifact metadata
 
 dataset/
-└── eco_place.csv            # Raw ecotourism dataset (182 destinations)
+└── eco_place.csv            # Raw tourism dataset (182 destinations)
 
 notebook/
 └── indo_ecotourism_cbf_ufw.ipynb  # Exploratory analysis notebook
